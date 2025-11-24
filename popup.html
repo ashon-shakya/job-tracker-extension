@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            width: 300px;
+            padding: 15px;
+            font-family: sans-serif;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0a66c2;
+            /* LinkedIn Blue */
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #004182;
+        }
+
+        #result {
+            margin-top: 15px;
+            font-size: 12px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            display: none;
+        }
+
+        .field {
+            margin-bottom: 5px;
+        }
+
+        strong {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>LinkedIn Scraper</h2>
+    <button id="scrapeBtn">Capture Job Data</button>
+
+    <div id="result">
+        <div class="field"><strong>Role:</strong> <span id="jobTitle"></span></div>
+        <div class="field"><strong>Company:</strong> <span id="company"></span></div>
+        <div class="field"><strong>Loc:</strong> <span id="location"></span></div>
+        <div class="field" style="color:green; margin-top:5px;">Data copied to clipboard!</div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
